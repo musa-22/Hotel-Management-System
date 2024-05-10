@@ -1,0 +1,102 @@
+﻿
+@model Booking_System.Model.Domain.RoomTypes
+
+<div class="container card ">
+
+    <h1 class="card-header text-center">Create Room</h1>
+
+    <div class="card-body border-2">
+
+        <form method="post" enctype="multipart/form-data" class="row">
+            
+            <div class="p-3">
+                
+                <div class="form-floating py-2 col-12" >
+
+                    <input asp-for="Name" class="form-control border" />
+
+                    <label asp-for="Name" class="ms-2">Name</label>
+
+                    <span asp-validation-for="Name" class="text-danger"></span>
+
+                </div>
+
+                <div class="form-floating py-2 col-12">
+
+                    <input asp-for="Price" class="form-control border" />
+
+                    <label asp-for="Price" class="ms-2"></label>
+
+                    <span asp-validation-for="Price" class="text-danger"></span>
+
+                </div>
+
+
+                <div class="form-floating py-2 col-12">
+
+                    <input asp-for="Guests" class="form-control border" />
+
+                    <label asp-for="Guests" class="ms-2">Guests</label>
+
+                    <span asp-validation-for="Guests" class="text-danger"></span>
+
+                </div>
+
+
+                <div class="form-floating py-2 col-12">
+
+                    <input type="file" asp-for="Image" class="form-control border" accept="image/*" />
+
+                    <label asp-for="ImageUrl" class="ms-2"></label>
+
+
+
+                </div>
+
+
+
+                <div class="form-floating py-2 col-12">
+
+                    <input asp-for="Description" class="form-control border" />
+
+                    <label asp-for="Description" class="ms-2">Description</label>
+
+                </div>
+
+                <div class="row pt-2">
+
+                    <div class="col-6 col-md-3">
+
+                        <button type="submit" class="btn btn-success w-100">Create Room</button>
+
+                    </div>
+
+                    <div class="col-6 col-md-3">
+
+                        <a asp-controller="Room" asp-action="Index"  type="submit"  class="btn btn-dark w-100">Cancel </a>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+        </form>
+    </div>
+
+</div>
+
+@*excute frontend validation*@
+@section Scripts {
+
+    @{
+
+        <partial name="_ValidationScriptsPartial" />
+
+    }
+
+}

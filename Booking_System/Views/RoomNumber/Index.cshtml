@@ -1,0 +1,64 @@
+﻿@model List<Booking_System.Model.Domain.RoomNumber>
+
+
+
+
+<div class="container">
+<div class="card">
+
+    <h1 class="card-header text-center">Rooms Number List</h1>
+
+    <div class="card-body">
+        <div class="row pb-3">
+            <div class="col-6 offset-6 text-end">
+
+                <a class="btn btn-outline-dark" asp-controller="RoomNumber" asp-action="Create">Create Room</a>
+
+            </div>
+
+
+        </div>
+
+
+        <table class="table table-bordered table-striped">
+
+            <thead>
+                <tr>
+
+                    @* <th>Id</th> *@
+                    <th>Room Name</th>
+                    <th>Room Number</th>
+                    <th>Special Details</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+
+                </tr>
+
+
+            </thead>
+
+            <tbody>
+                @foreach (var RoomObject in Model)
+                {
+                    <tr>
+
+
+                        <td>@RoomObject.RoomType.Name</td>
+                        <td>@RoomObject.Room_Number</td>
+                        <td>@RoomObject.SpecialDetails</td>
+
+                        <td><a class="btn btn-info" asp-controller="RoomNumber" asp-action="Update" asp-route-roomId="@RoomObject.Room_Number">Update</a></td>
+                        <td><a class="btn btn-danger" asp-controller="RoomNumber" asp-action="Delete" asp-route-roomId="@RoomObject.Room_Number">Delete</a></td>
+
+
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+
+
+    </div>
+
+</div>
+</div>

@@ -1,0 +1,621 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Booking_System.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Booking_System.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\css\\elegant-icons.css",
+      "PackagePath": "staticwebassets\\css\\elegant-icons.css"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\css\\flaticon.css",
+      "PackagePath": "staticwebassets\\css\\flaticon.css"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\css\\images\\ui-icons_444444_256x240.png",
+      "PackagePath": "staticwebassets\\css\\images\\ui-icons_444444_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\css\\images\\ui-icons_555555_256x240.png",
+      "PackagePath": "staticwebassets\\css\\images\\ui-icons_555555_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\css\\jquery-ui.min.css",
+      "PackagePath": "staticwebassets\\css\\jquery-ui.min.css"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\css\\nice-select.css",
+      "PackagePath": "staticwebassets\\css\\nice-select.css"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\css\\slicknav.min.css",
+      "PackagePath": "staticwebassets\\css\\slicknav.min.css"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\fonts\\ElegantIcons.eot",
+      "PackagePath": "staticwebassets\\fonts\\ElegantIcons.eot"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\fonts\\ElegantIcons.svg",
+      "PackagePath": "staticwebassets\\fonts\\ElegantIcons.svg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\fonts\\ElegantIcons.ttf",
+      "PackagePath": "staticwebassets\\fonts\\ElegantIcons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\fonts\\ElegantIcons.woff",
+      "PackagePath": "staticwebassets\\fonts\\ElegantIcons.woff"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\fonts\\Flaticon.eot",
+      "PackagePath": "staticwebassets\\fonts\\Flaticon.eot"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\fonts\\Flaticon.svg",
+      "PackagePath": "staticwebassets\\fonts\\Flaticon.svg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\fonts\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Flaticon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\fonts\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\fonts\\Flaticon.woff"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\Room\\2946ed4a-9c89-434b-8b3f-9ae966f832cb.jpg",
+      "PackagePath": "staticwebassets\\images\\Room\\2946ed4a-9c89-434b-8b3f-9ae966f832cb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\Room\\46285643-2341-4465-bc40-941fe02d4add.jpg",
+      "PackagePath": "staticwebassets\\images\\Room\\46285643-2341-4465-bc40-941fe02d4add.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\Room\\5ce0eecf-b860-4465-b06e-7354781a0eb8.jpg",
+      "PackagePath": "staticwebassets\\images\\Room\\5ce0eecf-b860-4465-b06e-7354781a0eb8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\Room\\6d09d226-b2d0-40ea-979d-555b87add7c8.jpg",
+      "PackagePath": "staticwebassets\\images\\Room\\6d09d226-b2d0-40ea-979d-555b87add7c8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\about\\about-1.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\about\\about-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\about\\about-2.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\about\\about-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\about\\about-p1.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\about\\about-p1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\about\\about-p2.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\about\\about-p2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\about\\about-p3.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\about\\about-p3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\blog\\blog-1.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\blog\\blog-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\blog\\blog-10.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\blog\\blog-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\blog\\blog-2.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\blog\\blog-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\blog\\blog-3.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\blog\\blog-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\blog\\blog-4.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\blog\\blog-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\blog\\blog-5.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\blog\\blog-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\blog\\blog-6.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\blog\\blog-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\blog\\blog-7.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\blog\\blog-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\blog\\blog-8.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\blog\\blog-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\blog\\blog-9.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\blog\\blog-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\blog\\blog-details\\avatar\\avatar-1.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\blog\\blog-details\\avatar\\avatar-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\blog\\blog-details\\avatar\\avatar-2.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\blog\\blog-details\\avatar\\avatar-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\blog\\blog-details\\avatar\\avatar-3.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\blog\\blog-details\\avatar\\avatar-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\blog\\blog-details\\blog-details-1.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\blog\\blog-details\\blog-details-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\blog\\blog-details\\blog-details-2.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\blog\\blog-details\\blog-details-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\blog\\blog-details\\blog-details-3.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\blog\\blog-details\\blog-details-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\blog\\blog-details\\blog-details-hero.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\blog\\blog-details\\blog-details-hero.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\blog\\blog-wide.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\blog\\blog-wide.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\flag.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\flag.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\footer-logo.png",
+      "PackagePath": "staticwebassets\\images\\img\\footer-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\gallery\\gallery-1.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\gallery\\gallery-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\gallery\\gallery-2.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\gallery\\gallery-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\gallery\\gallery-3.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\gallery\\gallery-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\gallery\\gallery-4.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\gallery\\gallery-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\hero\\hero-1.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\hero\\hero-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\hero\\hero-2.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\hero\\hero-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\hero\\hero-3.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\hero\\hero-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\logo.png",
+      "PackagePath": "staticwebassets\\images\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\play.png",
+      "PackagePath": "staticwebassets\\images\\img\\play.png"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\room\\avatar\\avatar-1.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\room\\avatar\\avatar-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\room\\avatar\\avatar-2.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\room\\avatar\\avatar-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\room\\room-1.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\room\\room-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\room\\room-2.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\room\\room-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\room\\room-3.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\room\\room-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\room\\room-4.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\room\\room-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\room\\room-5.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\room\\room-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\room\\room-6.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\room\\room-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\room\\room-b1.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\room\\room-b1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\room\\room-b2.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\room\\room-b2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\room\\room-b3.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\room\\room-b3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\room\\room-b4.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\room\\room-b4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\room\\room-details.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\room\\room-details.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\services\\s-icon-1.png",
+      "PackagePath": "staticwebassets\\images\\img\\services\\s-icon-1.png"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\testimonial-logo.png",
+      "PackagePath": "staticwebassets\\images\\img\\testimonial-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\video-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\video-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\notFound.jpg",
+      "PackagePath": "staticwebassets\\images\\notFound.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\js\\jquery-3.3.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.3.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\js\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-ui.min.js"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\js\\jquery.nice-select.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.nice-select.min.js"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\js\\jquery.slicknav.js",
+      "PackagePath": "staticwebassets\\js\\jquery.slicknav.js"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Booking_System.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Booking_System.props",
+      "PackagePath": "build\\Booking_System.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Booking_System.props",
+      "PackagePath": "buildMultiTargeting\\Booking_System.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Booking_System.props",
+      "PackagePath": "buildTransitive\\Booking_System.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

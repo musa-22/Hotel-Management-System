@@ -1,0 +1,150 @@
+﻿@using Booking_System.Model.Domain
+@using Microsoft.AspNetCore.Identity
+@inject Microsoft.AspNetCore.Identity.SignInManager<UserAdministration> SignInManager
+
+@inject Microsoft.AspNetCore.Identity.UserManager<UserAdministration> UserManager
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Booking_System</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Booking_System.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Css Styles -->
+ 
+    <link rel="stylesheet" href="~/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="~/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="~/css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="~/css/owl.carousel.min.css" type="text/css">
+     <link rel="stylesheet" href="~/css/nice-select.css" type="text/css"> 
+    <link rel="stylesheet" href="~/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="~/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="~/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="~/css/style.css" type="text/css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap" rel="stylesheet">
+
+    
+
+</head>
+<body>
+
+
+    <header class="header-section  ">
+           
+            <div class="menu-item">
+            <div class="container  ">
+                    <div class="row">
+                        <div class="col-lg-2 ">
+                            <div class="logo">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">
+                                    <img src="~/images/img/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-10 ">
+                            <div class="nav-menu">
+                                <nav class="mainmenu">
+                                    <ul>
+                                        <li class="active">
+
+                                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+
+                                            
+                                        </li>
+                                        <li><a >Rooms</a></li>
+                                        <li><a >About Us</a></li>
+                                        <li>
+                                            <a href="#">
+                                                Hotel Management
+                                            </a>
+                                            <ul class="dropdown">
+
+                                                <li >
+                                                <a  asp-area="" asp-controller="Room" asp-action="Index">Rooms Details</a>
+                                                </li>
+
+                                                <li>
+                                                    <a  asp-area="" asp-controller="RoomNumber" asp-action="Index">Rooms Number</a>
+                                                </li>
+
+
+
+
+                                            </ul>
+                                        </li>
+                                       
+                                        <li><a>Contact</a></li>
+
+                                    @if (SignInManager.IsSignedIn(User))
+                                    {
+
+                                        <li >
+                                            <a   href="#" >Hello , @UserManager.GetUserName(User)</a>
+
+                                        </li>
+
+                                        <li >
+                                            <a asp-controller="Account" asp-action="Logout">Logout</a>
+
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li>
+                                            <a asp-controller="Account" class="btn btn-outline-light" asp-action="Login">Login</a>
+
+                                        </li>
+                                    }
+
+                                   
+
+                                    </ul>
+                                </nav>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+       
+
+
+    <div >
+        <main role="main" class="pb-3">
+
+            <partial name="_Notification" />
+
+            @RenderBody()
+        </main>
+    </div>
+@* 
+    <footer class="border-top footer text-muted">
+        <div class="container text-center">
+            &copy; 2024 - Booking_System - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer> *@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    
+    <script src="~/js/jquery-3.3.1.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/js/jquery.nice-select.min.js"></script>
+    <script src="~/js/jquery-ui.min.js"></script>
+    <script src="~/js/jquery.slicknav.js"></script>
+    <script src="~/js/owl.carousel.min.js"></script>
+    <script src="~/js/main.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

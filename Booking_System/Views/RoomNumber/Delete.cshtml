@@ -1,0 +1,53 @@
+﻿@model Booking_System.Model.ViewModels.RoomNumberVM
+
+
+<div class=" container">
+    <div class=" card">
+        <h1 class="card-header text-center">Delete Room</h1>
+        <div class="card-body border-2">
+            <form method="post" class="row g-3">
+                <div class="col-12">
+                    <div class="form-floating col-12">
+                        <select disabled asp-for="@Model.RoomNumber.RoomId" asp-items="@Model.RoomList">
+                            <option disabled selected>-- Select Room --</option>
+                        </select>
+
+                        <span asp-validation-for="RoomNumber.RoomId" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-floating">
+                        <input disabled asp-for="RoomNumber.Room_Number" class="form-control" id="roomNumber">
+                        <label for="roomNumber">Room Number</label>
+                        <span asp-validation-for="RoomNumber.Room_Number" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-floating">
+                        <input disabled asp-for="RoomNumber.SpecialDetails" class="form-control" id="specialDetails">
+                        <label for="specialDetails">Special Details</label>
+                        <span asp-validation-for="RoomNumber.SpecialDetails" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <button type="submit" class="btn btn-danger w-100">Delete Room</button>
+                </div>
+                <div class="col-12 col-md-3">
+                    <a asp-controller="RoomNumber" asp-action="Index" class="btn btn-dark w-100">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+@*excute frontend validation*@
+@section Scripts {
+
+    @{
+
+        <partial name="_ValidationScriptsPartial" />
+
+    }
+
+}

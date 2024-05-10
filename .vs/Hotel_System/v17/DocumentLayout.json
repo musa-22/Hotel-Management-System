@@ -1,0 +1,141 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|c:\\users\\musas\\onedrive\\desktop\\hotel system\\hotel_system\\booking_system\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|solutionrelative:booking_system\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|c:\\users\\musas\\onedrive\\desktop\\hotel system\\hotel_system\\booking_system\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|solutionrelative:booking_system\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|c:\\users\\musas\\onedrive\\desktop\\hotel system\\hotel_system\\booking_system\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|solutionrelative:booking_system\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|c:\\users\\musas\\onedrive\\desktop\\hotel system\\hotel_system\\booking_system\\model\\viewmodels\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|solutionrelative:booking_system\\model\\viewmodels\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|c:\\users\\musas\\onedrive\\desktop\\hotel system\\hotel_system\\booking_system\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|solutionrelative:booking_system\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|c:\\users\\musas\\onedrive\\desktop\\hotel system\\hotel_system\\booking_system\\sd\\sd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|solutionrelative:booking_system\\sd\\sd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|c:\\users\\musas\\onedrive\\desktop\\hotel system\\hotel_system\\booking_system\\views\\roomnumber\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|solutionrelative:booking_system\\views\\roomnumber\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 171,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 281,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Booking_System\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Booking_System\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAFkAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-10T01:07:40.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SD.cs",
+              "DocumentMoniker": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\SD\\SD.cs",
+              "RelativeDocumentMoniker": "Booking_System\\SD\\SD.cs",
+              "ToolTip": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\SD\\SD.cs",
+              "RelativeToolTip": "Booking_System\\SD\\SD.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T12:05:31.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterVM.cs",
+              "DocumentMoniker": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Model\\ViewModels\\RegisterVM.cs",
+              "RelativeDocumentMoniker": "Booking_System\\Model\\ViewModels\\RegisterVM.cs",
+              "ToolTip": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Model\\ViewModels\\RegisterVM.cs",
+              "RelativeToolTip": "Booking_System\\Model\\ViewModels\\RegisterVM.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAsAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T02:19:54.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Booking_System\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Booking_System\\Views\\Account\\Register.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-09T01:08:34.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Views\\RoomNumber\\Update.cshtml",
+              "RelativeDocumentMoniker": "Booking_System\\Views\\RoomNumber\\Update.cshtml",
+              "ToolTip": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Views\\RoomNumber\\Update.cshtml",
+              "RelativeToolTip": "Booking_System\\Views\\RoomNumber\\Update.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-09T00:41:06.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Booking_System\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Booking_System\\Views\\Account\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-09T00:40:31.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Booking_System\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Booking_System\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T01:47:12.064Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

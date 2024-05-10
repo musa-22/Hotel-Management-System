@@ -1,0 +1,112 @@
+﻿ @model Booking_System.Model.ViewModels.HomeVM  
+ 
+
+ <!-- Hero Section Begin -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="hero-text">
+                    <h1>Sona A Luxury Hotel</h1>
+                    <p>
+                        Here are the best hotel booking sites, including recommendations for international
+                        travel and for finding low-priced hotel rooms.
+                    </p>
+                    <a href="#" class="primary-btn">Discover Now</a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 offset-xl-2 offset-lg-1">
+                <div class="booking-form">
+                    <h3>Booking Your Hotel</h3>
+                    <form method="post">
+                        <div class="check-date">
+                            <label for="date-in">Check In:</label>
+                            <input asp-for="CheckOutCheck" type="text" class="date-input" id="date-in">
+                            <i class="icon_calendar"></i>
+                        </div>
+                        
+                       
+                        <div class="select-option">
+                            <label for="room">Nights:</label>
+                            <select id="room">
+
+                                @for(int i =1; i <=15; i++)
+                                {
+                                    <option value="">@i</option>
+
+                                }
+                                
+                            </select>
+                        </div>
+                        <button type="submit">Check Availability</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="hero-slider owl-carousel">
+        <img src="~/images/img/hero/hero-1.jpg">
+        <img src="~/images/img/hero/hero-2.jpg" >
+        <img src="~/images/img/hero/hero-3.jpg">
+    </div>
+</section>
+
+
+<!-- Breadcrumb Section Begin -->
+<div class="breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-text">
+                    <h2>Our Rooms</h2>
+                    <div class="bt-option">
+                        <a href="./home.html">Home</a>
+                        <span>Rooms</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb Section End -->
+<!-- Rooms Section Begin -->
+<section class="rooms-section spad">
+    <div class="container">
+        <div class="row">
+            @foreach (var rooms in Model.RoomList)
+            {
+                <div class="col-lg-4 col-md-6">
+                    <div class="room-item">
+                        <img src="@rooms.ImageUrl" alt="" class="room_picture">
+                        <div class="ri-text">
+                            <h4>@rooms.Name</h4>
+                            <h4>@rooms.Price.ToString("c") </h4>
+                            <table>
+                                <tbody>
+                                    
+                                    <tr>
+                                        <td class="r-o">Capacity:</td>
+                                        <td>Max persion @rooms.Guests</td>
+                                    </tr>
+                                    
+                                   
+                                </tbody>
+                            </table>
+                            <a class="btn btn-outline-dark"> Booking Available  </a>
+                        </div>
+                    </div>
+                </div>
+
+            }
+
+
+       
+            
+           
+         
+        </div>
+    </div>
+</section>
+<!-- Rooms Section End -->

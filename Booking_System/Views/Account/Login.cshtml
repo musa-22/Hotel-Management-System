@@ -1,0 +1,54 @@
+﻿@model Booking_System.Model.ViewModels.LoginVM
+
+
+<div class=" container p-5">
+   
+        <h1 class=" text-center">Login To Your Account</h1>
+        <div class="card-body border-2">
+            <form method="post" class="row g-3">
+            <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+                <div class="col-12">
+                    <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+
+                    <div class="form-floating">
+                        <input  asp-for="Email" class="form-control" >
+                        <label >Email</label>
+                       @*  <span asp-validation-for="Email" class="text-danger"></span> *@
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-floating">
+                        <input asp-for="Password" class="form-control" >
+                        <label >Passowrd</label>
+                       @*  <span asp-validation-for="Password" class="text-danger"></span> *@
+                    </div>
+                </div>
+                <div class="col-12 ">
+                <button type="submit" class="btn btn-primary w-100">Login </button>
+
+                
+                </div>
+
+            <div class="col-12 ">
+                <a asp-controller="Account" asp-action="Register" class="btn btn-dark w-100">Register </a>
+
+
+            </div>
+
+              
+            </form>
+        </div>
+    </div>
+
+
+
+@*excute frontend validation*@
+@section Scripts {
+
+    @{
+
+        <partial name="_ValidationScriptsPartial" />
+
+    }
+
+}
