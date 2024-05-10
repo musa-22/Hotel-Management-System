@@ -111,7 +111,7 @@ namespace Booking_System.Controllers
 
 
         [HttpPost]
-        public ActionResult Update(RoomNumberVM roomNumberObj)
+        public  ActionResult Update(RoomNumberVM roomNumberObj)
         {
 
             if (ModelState.IsValid )

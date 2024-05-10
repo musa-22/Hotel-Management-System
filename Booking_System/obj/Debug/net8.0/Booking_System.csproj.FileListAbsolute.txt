@@ -285,6 +285,7 @@ C:\Users\musas\OneDrive\Desktop\Hotel System\Hotel_System\Booking_System\obj\Deb
 C:\Users\musas\OneDrive\Desktop\Hotel System\Hotel_System\Booking_System\obj\Debug\net8.0\Booking_System.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\musas\OneDrive\Desktop\Hotel System\Hotel_System\Booking_System\obj\Debug\net8.0\Booking_System.RazorAssemblyInfo.cache
 C:\Users\musas\OneDrive\Desktop\Hotel System\Hotel_System\Booking_System\obj\Debug\net8.0\Booking_System.RazorAssemblyInfo.cs
+C:\Users\musas\OneDrive\Desktop\Hotel System\Hotel_System\Booking_System\obj\Debug\net8.0\Booking_System.sourcelink.json
 C:\Users\musas\OneDrive\Desktop\Hotel System\Hotel_System\Booking_System\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\musas\OneDrive\Desktop\Hotel System\Hotel_System\Booking_System\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\musas\OneDrive\Desktop\Hotel System\Hotel_System\Booking_System\obj\Debug\net8.0\staticwebassets\msbuild.Booking_System.Microsoft.AspNetCore.StaticWebAssets.props
