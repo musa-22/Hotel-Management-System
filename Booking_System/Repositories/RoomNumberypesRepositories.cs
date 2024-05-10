@@ -1,9 +1,11 @@
 ﻿using Booking_System.Data;
 using Booking_System.Model.Domain;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 
 namespace Booking_System.Repositories
 {
+
     public class RoomNumberypesRepositories : IRoomNumberpesRepositories
     {
 

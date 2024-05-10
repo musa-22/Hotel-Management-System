@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|c:\\users\\musas\\onedrive\\desktop\\hotel system\\hotel_system\\booking_system\\repositories\\roomnumberypesrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|solutionrelative:booking_system\\repositories\\roomnumberypesrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|c:\\users\\musas\\onedrive\\desktop\\hotel system\\hotel_system\\booking_system\\repositories\\roomtypesrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|solutionrelative:booking_system\\repositories\\roomtypesrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|c:\\users\\musas\\onedrive\\desktop\\hotel system\\hotel_system\\booking_system\\repositories\\iroomnumberypesrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|solutionrelative:booking_system\\repositories\\iroomnumberypesrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|c:\\users\\musas\\onedrive\\desktop\\hotel system\\hotel_system\\booking_system\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|solutionrelative:booking_system\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|c:\\users\\musas\\onedrive\\desktop\\hotel system\\hotel_system\\booking_system\\controllers\\roomnumbercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|solutionrelative:booking_system\\controllers\\roomnumbercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|c:\\users\\musas\\onedrive\\desktop\\hotel system\\hotel_system\\booking_system\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|solutionrelative:booking_system\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,66 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RoomNumberypesRepositories.cs",
-              "DocumentMoniker": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Repositories\\RoomNumberypesRepositories.cs",
-              "RelativeDocumentMoniker": "Booking_System\\Repositories\\RoomNumberypesRepositories.cs",
-              "ToolTip": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Repositories\\RoomNumberypesRepositories.cs",
-              "RelativeToolTip": "Booking_System\\Repositories\\RoomNumberypesRepositories.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAA1wBcAAAAAAAAA",
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Booking_System\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Booking_System\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAwwGoAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T13:35:53.239Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RoomTypesRepositories.cs",
-              "DocumentMoniker": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Repositories\\RoomTypesRepositories.cs",
-              "RelativeDocumentMoniker": "Booking_System\\Repositories\\RoomTypesRepositories.cs",
-              "ToolTip": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Repositories\\RoomTypesRepositories.cs",
-              "RelativeToolTip": "Booking_System\\Repositories\\RoomTypesRepositories.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T13:34:39.347Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RoomNumberController.cs",
-              "DocumentMoniker": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Controllers\\RoomNumberController.cs",
-              "RelativeDocumentMoniker": "Booking_System\\Controllers\\RoomNumberController.cs",
-              "ToolTip": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Controllers\\RoomNumberController.cs",
-              "RelativeToolTip": "Booking_System\\Controllers\\RoomNumberController.cs",
-              "ViewState": "AQIAAGIAAAAAAAAAAAAjwHEAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T11:38:50.441Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RoomController.cs",
-              "DocumentMoniker": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Controllers\\RoomController.cs",
-              "RelativeDocumentMoniker": "Booking_System\\Controllers\\RoomController.cs",
-              "ToolTip": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Controllers\\RoomController.cs",
-              "RelativeToolTip": "Booking_System\\Controllers\\RoomController.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAIwFsAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T11:38:42.137Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IRoomNumberypesRepositories.cs",
-              "DocumentMoniker": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Repositories\\IRoomNumberypesRepositories.cs",
-              "RelativeDocumentMoniker": "Booking_System\\Repositories\\IRoomNumberypesRepositories.cs",
-              "ToolTip": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Repositories\\IRoomNumberypesRepositories.cs",
-              "RelativeToolTip": "Booking_System\\Repositories\\IRoomNumberypesRepositories.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T11:28:42.227Z",
+              "WhenOpened": "2024-05-10T15:09:29.021Z",
               "EditorCaption": ""
             }
           ]

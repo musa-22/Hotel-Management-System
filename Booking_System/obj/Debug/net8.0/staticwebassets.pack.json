@@ -133,6 +133,10 @@
       "PackagePath": "staticwebassets\\images\\Room\\6d09d226-b2d0-40ea-979d-555b87add7c8.jpg"
     },
     {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\denied.png",
+      "PackagePath": "staticwebassets\\images\\denied.png"
+    },
+    {
       "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\about\\about-1.jpg",
       "PackagePath": "staticwebassets\\images\\img\\about\\about-1.jpg"
     },

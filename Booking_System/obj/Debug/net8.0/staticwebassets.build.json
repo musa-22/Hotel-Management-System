@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ioztRF/yVMYJODlw9oSyW18qtpL6vO7ouYciKq0/cV0=",
+  "Hash": "avAy9qQ5uaqqnckRlta/suGgTFjabmmkoC6Nc0gE4sk=",
   "Source": "Booking_System",
   "BasePath": "_content/Booking_System",
   "Mode": "Default",
@@ -585,6 +585,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Identity": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\denied.png",
+      "SourceId": "Booking_System",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\",
+      "BasePath": "_content/Booking_System",
+      "RelativePath": "images/denied.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\denied.png"
     },
     {
       "Identity": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\img\\about\\about-1.jpg",

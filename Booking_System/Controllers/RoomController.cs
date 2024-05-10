@@ -1,13 +1,15 @@
 ﻿using Booking_System.Data;
 using Booking_System.Model.Domain;
 using Booking_System.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+
 
 namespace Booking_System.Controllers
 {
+
+    [Authorize(Roles = SD.SD.Admin_role)]
     public class RoomController : Controller
     {
 

@@ -27,8 +27,13 @@ namespace Booking_System
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             builder.Services.AddScoped<IRoomTypesRepositories, RoomTypesRepositories>();
-
-
+             
+            // modify passwords
+            builder.Services.Configure<IdentityOptions>(option =>
+            {
+                option.Password.RequiredLength = 10; 
+                
+            });
 
             var app = builder.Build();
 

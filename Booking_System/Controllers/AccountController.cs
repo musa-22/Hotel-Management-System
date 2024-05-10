@@ -81,8 +81,10 @@ namespace Booking_System.Controllers
 
 
         [HttpGet]
-        public async Task<IActionResult> Register()
+        public async Task<IActionResult> Register(string returnUrl = null)
         {
+
+            returnUrl ??= Url.Content("~/");
 
             // role manager used to create role for the app users 
             if (!_roleManager.RoleExistsAsync(SD.SD.Admin_role).GetAwaiter().GetResult())
@@ -101,7 +103,8 @@ namespace Booking_System.Controllers
                     Text = x.Name,
                     Value = x.Name
 
-                })
+                }),
+                RedirectUrl = returnUrl
 
             };
             return View(registerVM);
@@ -111,57 +114,58 @@ namespace Booking_System.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(RegisterVM registerVM)
         {
-
-            UserAdministration RegUser = new ()
+            if (ModelState.IsValid)
             {
-                Name = registerVM.Name,
-                Email = registerVM.Email, 
-                PhoneNumber = registerVM.phoneNumber,
-                NormalizedEmail = registerVM.Email.ToUpper(),
-                EmailConfirmed = true,
-                UserName = registerVM.Email,
-                CreatedDateAt = DateTime.Now,
-
-            };
-
-            // register user details in database 
-
-           var results = await _userManager.CreateAsync(RegUser , registerVM.Password);
-
-            // check reg process 
-            if(results.Succeeded)
-            {
-                //  check if the role was not empty just assign the role // else assign customer role by def
-                if (!string.IsNullOrEmpty(registerVM.Email))
+                UserAdministration RegUser = new()
                 {
-                    await _userManager.AddToRoleAsync(RegUser , registerVM.Role);
-                }
-                else
+                    Name = registerVM.Name,
+                    Email = registerVM.Email,
+                    PhoneNumber = registerVM.phoneNumber,
+                    NormalizedEmail = registerVM.Email.ToUpper(),
+                    EmailConfirmed = true,
+                    UserName = registerVM.Email,
+                    CreatedDateAt = DateTime.Now,
+
+                };
+
+                // register user details in database 
+
+                var results = await _userManager.CreateAsync(RegUser, registerVM.Password);
+
+                // check reg process 
+                if (results.Succeeded)
                 {
-                    await _userManager.AddToRoleAsync (RegUser , SD.SD.Customer_role);
+                    //  check if the role was not empty just assign the role // else assign customer role by def
+                    if (!string.IsNullOrEmpty(registerVM.Email))
+                    {
+                        await _userManager.AddToRoleAsync(RegUser, registerVM.Role);
+                    }
+                    else
+                    {
+                        await _userManager.AddToRoleAsync(RegUser, SD.SD.Customer_role);
+                    }
+
+                    //  auto sign user after register
+
+                    await _signInManager.SignInAsync(RegUser, isPersistent: false);
+
+                    // if the RedirectUrl is empty redirect to the home page else to the LocalRedirect
+                    if (string.IsNullOrEmpty(registerVM.RedirectUrl))
+                    {
+                        return RedirectToAction("Index", "Home");
+                    }
+                    else
+                    {
+                        return LocalRedirect(registerVM.RedirectUrl);
+                    }
                 }
 
-                //  auto sign user after register
-                
-                await _signInManager.SignInAsync(RegUser, isPersistent: false);
-
-                // if the RedirectUrl is empty redirect to the home page else to the LocalRedirect
-                if (string.IsNullOrEmpty(registerVM.RedirectUrl))
+                // show error if something went wrong 
+                foreach (var error in results.Errors)
                 {
-                    return RedirectToAction("Index", "Home");
+                    ModelState.AddModelError("", error.Description);
                 }
-                else
-                {
-                 return   LocalRedirect(registerVM.RedirectUrl);
-                }
-            } 
-            
-            // show error if something went wrong 
-            foreach (var error in results.Errors)
-            {
-                ModelState.AddModelError("", error.Description);
             }
-
             // implement dropdown list for user role
             registerVM.RoleList = _roleManager.Roles.Select(x => new SelectListItem
                {
@@ -181,6 +185,16 @@ namespace Booking_System.Controllers
           await _signInManager.SignOutAsync();
             
             return RedirectToAction("Index", "Home");
+        }
+
+
+
+        public IActionResult AccessDenied()
+        {
+
+
+
+            return View();
         }
 
     }

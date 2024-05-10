@@ -1,12 +1,15 @@
 ﻿using Booking_System.Data;
 using Booking_System.Model.Domain;
 using Booking_System.Model.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace Booking_System.Controllers
 {
+
+    [Authorize(Roles = SD.SD.Admin_role)]
     public class RoomNumberController : Controller
     {
 
@@ -163,6 +166,7 @@ namespace Booking_System.Controllers
 
             return View(roomNumberVM);
         }
+
 
         [HttpPost]
         public ActionResult Delete(RoomNumberVM roomNumberVM)
