@@ -1,5 +1,6 @@
 ﻿using Booking_System.Data;
 using Booking_System.Model.Domain;
+using Booking_System.Model.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 
@@ -20,31 +21,83 @@ namespace Booking_System.Repositories
 
         public async Task<IEnumerable<RoomNumber>> GetAllAsync()
         {
-          return   await _db.RoomNumbersDb.ToListAsync();
+         var  RoomNumbersList=  await _db.RoomNumbersDb.Include(x=>x.RoomType).ToListAsync();
+
+          if(RoomNumbersList is not null )
+            {
+                return RoomNumbersList;
+            }
+            return null;
             
         }
 
-        public Task<RoomNumber> CreateAsync(RoomNumber roomTypes)
+        public async Task<RoomNumber> CreateAsync(RoomNumber roomNumber)
         {
-            throw new NotImplementedException();
+           
+                await _db.AddAsync(roomNumber);
+                await _db.SaveChangesAsync();
+            
+
+            return roomNumber;
         }
 
 
-        public Task<RoomNumber> GetAsync(int id)
+        public bool CheckExistNo(RoomNumberVM roomNumberObj)
         {
-            throw new NotImplementedException();
+            bool checkAndValidate = _db.RoomNumbersDb.Any(u => u.Room_Number == roomNumberObj.RoomNumber.Room_Number);
+            return checkAndValidate;
         }
 
 
-        public Task<RoomNumber> DeleteAsync(RoomNumber roomTypes)
+        public RoomNumber GetAsync(int id)
         {
-            throw new NotImplementedException();
+          var getTempData=  _db.RoomNumbersDb.FirstOrDefault(x=>x.Room_Number == id);
+
+            if (getTempData is not null)
+            {
+                return getTempData;
+            }
+
+            return null;
+        }
+
+    
+
+        public async Task<RoomNumber> UpdateAsync(RoomNumber roomNumber)
+        {
+            
+             _db.RoomNumbersDb.Update(roomNumber);
+            await  _db.SaveChangesAsync();
+
+            return roomNumber;
+
+
+        }
+
+        public async Task<RoomNumber> DeleteAsync(RoomNumber roomTypes)
+        {
+            var deleteRoomNumber = await _db.RoomNumbersDb.FindAsync(roomTypes.Room_Number);
+
+            if (deleteRoomNumber is not null)
+            {
+               
+                _db.RoomNumbersDb.Remove(deleteRoomNumber);
+
+               await _db.SaveChangesAsync();
+                
+                return deleteRoomNumber;
+            }
+
+           return null;
         }
 
 
-        public Task<RoomNumber> UpdateAsync(RoomNumber roomTypes)
+        public async Task<List<RoomTypes>> GetRoomTypes()
         {
-            throw new NotImplementedException();
+            var roomTypes = await _db.RoomTypesDb.ToListAsync();
+            return roomTypes;
         }
+
+     
     }
 }

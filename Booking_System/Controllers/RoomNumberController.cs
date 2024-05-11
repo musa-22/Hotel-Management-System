@@ -1,6 +1,7 @@
 ﻿using Booking_System.Data;
 using Booking_System.Model.Domain;
 using Booking_System.Model.ViewModels;
+using Booking_System.Repositories;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -12,19 +13,23 @@ namespace Booking_System.Controllers
     [Authorize(Roles = SD.SD.Admin_role)]
     public class RoomNumberController : Controller
     {
+         private readonly ApplicationDbContext _context;
+        private readonly IRoomNumberpesRepositories _db;
 
-        private readonly ApplicationDbContext _db;
 
-
-        public RoomNumberController(ApplicationDbContext db)
+        public RoomNumberController(IRoomNumberpesRepositories db, ApplicationDbContext context)
         {
             this._db = db;
+            _context = context;
+
         }
 
-        public IActionResult Index()
+
+
+        public async Task<IActionResult> Index()
         {
 
-            var getRoomNumber = _db.RoomNumbersDb.Include(u=>u.RoomType).ToList();
+            var getRoomNumber = await _db.GetAllAsync();
 
 
             return View(getRoomNumber);
@@ -32,52 +37,55 @@ namespace Booking_System.Controllers
         }
 
         [HttpGet]
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
-
+            var getRoomType = await _db.GetRoomTypes();
 
 
             RoomNumberVM roomNumberVM = new()
             {
-                RoomList = _db.RoomTypesDb.ToList().Select(r => new SelectListItem 
-                { 
-                Text = r.Name,  
-                Value = r.Id.ToString()
-                
+                RoomList = getRoomType.Select(r => new SelectListItem
+                {
+                    Text = r.Name,
+                    Value = r.Id.ToString()
+
                 })
-           };
-         
+            };
+
             return View(roomNumberVM);
         }
 
 
+
+
         [HttpPost]
-        public IActionResult Create(RoomNumberVM roomNumberObj)
+        public async Task<IActionResult> Create(RoomNumberVM roomNumberObj)
         {
+            var getRoomType = await _db.GetRoomTypes();
 
             // check if the numbers are exist in the table  ..
 
-         bool checkExistNo = _db.RoomNumbersDb.Any(u => u.Room_Number == roomNumberObj.RoomNumber.Room_Number); //return true || false if No exsit in the record 
+            var checkExitRoomNo = _db.CheckExistNo(roomNumberObj); //return true || false if No exsit in the record 
 
             // if data are valid and && Number not exist just create that record 
-            if (ModelState.IsValid && !checkExistNo)
+            if (ModelState.IsValid && !checkExitRoomNo)
             {
 
-           
-            _db.RoomNumbersDb.Add(roomNumberObj.RoomNumber);
-            _db.SaveChanges();
+
+                await _db.CreateAsync(roomNumberObj.RoomNumber);
+
                 TempData["success"] = " The room Number has been successfully created ";
-                return  RedirectToAction("Index", "RoomNumber");
+                return RedirectToAction("Index", "RoomNumber");
             }
 
-            if(checkExistNo)
+            if (checkExitRoomNo)
             {
                 TempData["error"] = " The room Number already exist in the record  ";
             }
 
             // set up dropdwon list again to keep list populate 
 
-            roomNumberObj.RoomList = _db.RoomTypesDb.ToList().Select(r => new SelectListItem
+            roomNumberObj.RoomList = getRoomType.Select(r => new SelectListItem
             {
                 Text = r.Name,
                 Value = r.Id.ToString()
@@ -88,75 +96,22 @@ namespace Booking_System.Controllers
         }
 
 
+
         [HttpGet]
-        public IActionResult Update(int roomId)
+        public async Task<IActionResult> Update(int roomId)
         {
+            var getRoomNumber =await _db.GetRoomTypes();
 
             RoomNumberVM roomNumberVM = new()
             {
-                RoomList = _db.RoomTypesDb.ToList().Select(r => new SelectListItem
+                RoomList = getRoomNumber.Select(r => new SelectListItem
                 {
                     Text = r.Name,
                     Value = r.Id.ToString()
 
                 }),
 
-                 RoomNumber = _db.RoomNumbersDb.FirstOrDefault(x=> x.Room_Number == roomId)
-        };
-
-            if(roomNumberVM.RoomNumber == null)
-            {
-                return RedirectToAction("Error", "Home");
-            }
-
-            return View(roomNumberVM);
-        }
-
-
-        [HttpPost]
-        public  ActionResult Update(RoomNumberVM roomNumberObj)
-        {
-
-            if (ModelState.IsValid )
-            {
-
-
-                _db.RoomNumbersDb.Update(roomNumberObj.RoomNumber);
-                _db.SaveChanges();
-                TempData["success"] = " The room Number has been successfully updated ";
-                return RedirectToAction("Index", "RoomNumber");
-            }
-
-
-            // set up dropdwon list again to keep list populate 
-
-            roomNumberObj.RoomList = _db.RoomTypesDb.ToList().Select(r => new SelectListItem
-            {
-                Text = r.Name,
-                Value = r.Id.ToString()
-
-            });
-
-            return View(roomNumberObj);
-
-
-          
-        }
-
-        [HttpGet]
-        public ActionResult Delete(int roomId)
-        {
-
-            RoomNumberVM roomNumberVM = new()
-            {
-                RoomList = _db.RoomTypesDb.ToList().Select(r => new SelectListItem
-                {
-                    Text = r.Name,
-                    Value = r.Id.ToString()
-
-                }),
-
-                RoomNumber = _db.RoomNumbersDb.FirstOrDefault(x => x.Room_Number == roomId)
+                RoomNumber = _db.GetAsync(roomId)
             };
 
             if (roomNumberVM.RoomNumber == null)
@@ -169,15 +124,72 @@ namespace Booking_System.Controllers
 
 
         [HttpPost]
-        public ActionResult Delete(RoomNumberVM roomNumberVM)
+        public async Task< ActionResult> Update(RoomNumberVM roomNumberObj)
         {
-            var roomToDele = _db.RoomNumbersDb.FirstOrDefault(x =>x.Room_Number == roomNumberVM.RoomNumber.Room_Number);
-            
-            if(roomToDele is not null)
+            var getRoomNumber = await _db.GetRoomTypes();
+            if (ModelState.IsValid)
             {
-                _db.RoomNumbersDb.Remove(roomToDele);
+
+
+               _db.UpdateAsync(roomNumberObj.RoomNumber);
+                // _db.SaveChanges();
+                TempData["success"] = " The room Number has been successfully updated ";
+                return RedirectToAction("Index", "RoomNumber");
+            }
+
+
+            // set up dropdwon list again to keep list populate 
+
+            roomNumberObj.RoomList = getRoomNumber.Select(r => new SelectListItem
+            {
+                Text = r.Name,
+                Value = r.Id.ToString()
+
+            });
+
+            return View(roomNumberObj);
+
+
+
+        }
+
+
+        [HttpGet]
+        public async Task <ActionResult> Delete(int roomId)
+        {
+            var getRoomType = await _db.GetRoomTypes();
+            RoomNumberVM roomNumberVM = new()
+            {
+                RoomList = getRoomType.ToList().Select(r => new SelectListItem
+                {
+                    Text = r.Name,
+                    Value = r.Id.ToString()
+
+                }),
+
+                RoomNumber = _db.GetAsync(roomId)
+            };
+
+            if (roomNumberVM.RoomNumber == null)
+            {
+                return RedirectToAction("Error", "Home");
+            }
+
+            return View(roomNumberVM);
+        }
+
+
+        [HttpPost]
+        public async Task<ActionResult> Delete(RoomNumberVM roomNumberVM)
+        {
+            
+            var getDeleteRoomNumber = await _db.DeleteAsync(roomNumberVM.RoomNumber);
+
+            if (getDeleteRoomNumber is not null)
+            {
+             
                 TempData["success"] = " The room Number has been successfully deleted ";
-                _db.SaveChanges();
+      
                 return RedirectToAction("Index", "RoomNumber");
             }
 

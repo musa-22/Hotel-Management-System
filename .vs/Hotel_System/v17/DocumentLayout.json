@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|c:\\users\\musas\\onedrive\\desktop\\hotel system\\hotel_system\\booking_system\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|solutionrelative:booking_system\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|c:\\users\\musas\\onedrive\\desktop\\hotel system\\hotel_system\\booking_system\\controllers\\roomnumbercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|solutionrelative:booking_system\\controllers\\roomnumbercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|c:\\users\\musas\\onedrive\\desktop\\hotel system\\hotel_system\\booking_system\\repositories\\roomnumberypesrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|solutionrelative:booking_system\\repositories\\roomnumberypesrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|c:\\users\\musas\\onedrive\\desktop\\hotel system\\hotel_system\\booking_system\\views\\roomnumber\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|solutionrelative:booking_system\\views\\roomnumber\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,23 +22,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 281,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RoomNumberController.cs",
+              "DocumentMoniker": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Controllers\\RoomNumberController.cs",
+              "RelativeDocumentMoniker": "Booking_System\\Controllers\\RoomNumberController.cs",
+              "ToolTip": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Controllers\\RoomNumberController.cs",
+              "RelativeToolTip": "Booking_System\\Controllers\\RoomNumberController.cs",
+              "ViewState": "AQIAAIwAAAAAAAAAAAAAwJsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T13:07:01.044Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Booking_System\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Booking_System\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAwwGoAAAAnAAAA",
+              "DocumentIndex": 2,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Views\\RoomNumber\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Booking_System\\Views\\RoomNumber\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Views\\RoomNumber\\Delete.cshtml",
+              "RelativeToolTip": "Booking_System\\Views\\RoomNumber\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-11T20:54:02.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RoomNumberypesRepositories.cs",
+              "DocumentMoniker": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Repositories\\RoomNumberypesRepositories.cs",
+              "RelativeDocumentMoniker": "Booking_System\\Repositories\\RoomNumberypesRepositories.cs",
+              "ToolTip": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Repositories\\RoomNumberypesRepositories.cs",
+              "RelativeToolTip": "Booking_System\\Repositories\\RoomNumberypesRepositories.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAmwFMAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T15:09:29.021Z",
+              "WhenOpened": "2024-05-10T21:10:53.289Z",
               "EditorCaption": ""
             }
           ]

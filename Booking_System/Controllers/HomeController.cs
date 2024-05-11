@@ -38,6 +38,10 @@ namespace Booking_System.Controllers
             return View(homeVM);
         }
 
+
+
+
+
         public IActionResult Privacy()
         {
             return View();

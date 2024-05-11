@@ -72,7 +72,7 @@ namespace Booking_System.Repositories
             
                 
 
-                await _db.AddRangeAsync(roomTypes);
+                await _db.AddAsync(roomTypes);
             
                 await _db.SaveChangesAsync();   
             }

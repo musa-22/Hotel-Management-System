@@ -21,6 +21,7 @@ namespace Booking_System.Controllers
             _webHost = webHost;   
 
         }
+       
         public async Task<IActionResult> Index()
         {
 
@@ -36,6 +37,7 @@ namespace Booking_System.Controllers
 
             return View();
         }
+
 
         [HttpPost]
         public async Task<IActionResult> Create(RoomTypes roomObj)

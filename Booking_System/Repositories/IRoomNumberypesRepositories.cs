@@ -1,4 +1,5 @@
 ﻿using Booking_System.Model.Domain;
+using Booking_System.Model.ViewModels;
 using System.Linq.Expressions;
 
 namespace Booking_System.Repositories
@@ -12,14 +13,20 @@ namespace Booking_System.Repositories
 
         Task<RoomNumber> CreateAsync(RoomNumber roomTypes);
 
+        Task<List<RoomTypes>> GetRoomTypes ();
 
-       Task<RoomNumber> GetAsync(int id);
+       RoomNumber GetAsync(int id);
 
 
        Task<RoomNumber> UpdateAsync(RoomNumber roomTypes);
 
 
        Task<RoomNumber> DeleteAsync(RoomNumber roomTypes);
+
+        public bool CheckExistNo(RoomNumberVM roomNumberObj);
+
+
+
 
     }
 }
