@@ -33,6 +33,8 @@ namespace Booking_System.Model.Domain
         [NotMapped]
         public IFormFile? Image { get; set; }
 
+        [NotMapped]
+        public bool IsAvailable { get; set; } = true;   
 
     }
 }

@@ -18,17 +18,20 @@
             <div class="col-xl-4 col-lg-5 offset-xl-2 offset-lg-1">
                 <div class="booking-form">
                     <h3>Booking Your Hotel</h3>
-                    <form method="post">
+
+                    <form method="post" asp-action="GetRoomsByDate">
+
+                        
                         <div class="check-date">
                             <label for="date-in">Check In:</label>
-                            <input asp-for="CheckOutCheck" type="text" class="date-input" id="date-in">
+                            <input asp-for="CheckInDate" type="text" class="date-input" >
                             <i class="icon_calendar"></i>
                         </div>
                         
                        
                         <div class="select-option">
-                            <label for="room">Nights:</label>
-                            <select id="room">
+                            <label >Nights:</label>
+                            <select  asp-for="Nights">
 
                                 @for(int i =1; i <=15; i++)
                                 {
@@ -38,7 +41,7 @@
                                 
                             </select>
                         </div>
-                        <button type="submit">Check Availability</button>
+                        <button type="button" onclick="LoadRoomList()">Check Availability</button>
                     </form>
                 </div>
             </div>
@@ -60,11 +63,8 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="breadcrumb-text">
-                    <h2>Our Rooms</h2>
-                    <div class="bt-option">
-                        <a href="./home.html">Home</a>
-                        <span>Rooms</span>
-                    </div>
+                    <h2>Welcome To Sona Hotel </h2>
+                    
                 </div>
             </div>
         </div>
@@ -72,41 +72,34 @@
 </div>
 <!-- Breadcrumb Section End -->
 <!-- Rooms Section Begin -->
-<section class="rooms-section spad">
-    <div class="container">
-        <div class="row">
-            @foreach (var rooms in Model.RoomList)
-            {
-                <div class="col-lg-4 col-md-6">
-                    <div class="room-item">
-                        <img src="@rooms.ImageUrl" alt="" class="room_picture">
-                        <div class="ri-text">
-                            <h4>@rooms.Name</h4>
-                            <h4>@rooms.Price.ToString("c") </h4>
-                            <table>
-                                <tbody>
-                                    
-                                    <tr>
-                                        <td class="r-o">Capacity:</td>
-                                        <td>Max persion @rooms.Guests</td>
-                                    </tr>
-                                    
-                                   
-                                </tbody>
-                            </table>
-                            <a class="btn btn-outline-dark"> Booking Available  </a>
-                        </div>
-                    </div>
-                </div>
 
-            }
+<partial name="_RoomList" model="Model" />
 
-
-       
-            
-           
-         
-        </div>
-    </div>
-</section>
 <!-- Rooms Section End -->
+
+
+
+
+@section scripts {
+    <script>
+        function LoadRoomList() {
+          
+            var objData = {
+                checkInDate: $("#CheckInDate").val(),
+                nights: $("#Nights").val()
+            };
+
+            $.ajax({
+                type: "POST",
+                data: objData,
+                url: "@Url.Action("GetRoomsByDate", "Home")",
+                success: function (data) {
+                   $("#RoomLists").empty();
+                    $("#RoomLists").html(data);
+                   
+                }
+               
+            });
+        }
+    </script>
+}

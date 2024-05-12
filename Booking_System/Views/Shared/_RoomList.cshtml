@@ -1,0 +1,57 @@
+﻿ @model Booking_System.Model.ViewModels.HomeVM
+ 
+ <div id="RoomLists"
+<section class="rooms-section spad">
+    <div class="container">
+        <div class="row">
+            @foreach (var rooms in Model.RoomList)
+            {
+                <div class="col-lg-4 col-md-6">
+                    <div class="room-item">
+                        <img src="@rooms.ImageUrl" alt="" class="room_picture">
+                        <div class="ri-text">
+                            <h4>@rooms.Name</h4>
+                            <h4>@rooms.Price.ToString("c") </h4>
+                            <table>
+                                <tbody>
+
+                                    <tr>
+                                        <td class="r-o">Capacity:</td>
+                                        <td>Max persion @rooms.Guests</td>
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+
+                            @if (Model.CheckInDate >= DateOnly.FromDateTime(DateTime.Now))
+                            {
+
+                                if (rooms.IsAvailable)
+                                {
+                                    <button class="btn btn-outline-dark"> Booking Available  </button>
+                                }
+                                else
+                                {
+
+                                    <button disabled class="btn btn-danger"> Not Available  </button>
+                                }
+                            }
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            }
+
+
+
+
+
+
+        </div>
+    </div>
+</section>
+</div>
