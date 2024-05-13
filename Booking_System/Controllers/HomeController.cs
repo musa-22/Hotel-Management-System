@@ -39,27 +39,9 @@ namespace Booking_System.Controllers
         }
 
 
-        //  hard code for ava room
-
-        //public async Task<IActionResult> Index(HomeVM homeObj)
-        //{
-
-        //    homeObj.RoomList = await _roomDbRepositories.GetAllAsync();
-
-        //    loop thr all the rooms
-        //   foreach (var rooms in homeObj.RoomList)
-        //    {
-        //        if (rooms.Id % 2 == 0)
-        //        {
-        //            rooms.IsAvailable = false;
-        //        }
-        //    }
-
-        //    return View(homeObj);
-        //}
 
 
-        // only refersh room part in the main page 
+        // only refresh room part in the main page 
         [HttpPost]
         public async Task<IActionResult> GetRoomsByDate(int nights, DateOnly checkInDate)
         {

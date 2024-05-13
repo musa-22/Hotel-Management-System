@@ -2,6 +2,10 @@
  
  <div id="RoomLists"
 <section class="rooms-section spad">
+    <form method="post" >
+
+      <input asp-for="Nights" hidden/>
+        
     <div class="container">
         <div class="row">
             @foreach (var rooms in Model.RoomList)
@@ -29,11 +33,15 @@
 
                                 if (rooms.IsAvailable)
                                 {
-                                    <button class="btn btn-outline-dark"> Booking Available  </button>
+                                 <button class="btn btn-outline-dark" 
+                                 asp-controller="BookingRoom" 
+                                 asp-action="FinalizeReservation"
+                                 asp-route-roomId="@rooms.Id"
+                                 asp-route-checkInDate="@Model.CheckInDate" 
+                                 asp-route-nights="@Model.Nights"> Booking Available </button>
                                 }
                                 else
                                 {
-
                                     <button disabled class="btn btn-danger"> Not Available  </button>
                                 }
                             }
@@ -53,5 +61,7 @@
 
         </div>
     </div>
+
+    </form>
 </section>
 </div>

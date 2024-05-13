@@ -13,14 +13,14 @@ namespace Booking_System.Controllers
     [Authorize(Roles = SD.SD.Admin_role)]
     public class RoomNumberController : Controller
     {
-         private readonly ApplicationDbContext _context;
+        
         private readonly IRoomNumberpesRepositories _db;
 
 
-        public RoomNumberController(IRoomNumberpesRepositories db, ApplicationDbContext context)
+        public RoomNumberController(IRoomNumberpesRepositories db )
         {
             this._db = db;
-            _context = context;
+            
 
         }
 

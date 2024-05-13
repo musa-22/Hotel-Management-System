@@ -20,7 +20,7 @@
                     <h3>Booking Your Hotel</h3>
 
                     <form method="post" asp-action="GetRoomsByDate">
-
+                       @*  <input asp-for="Nights" hidden /> *@
                         
                         <div class="check-date">
                             <label for="date-in">Check In:</label>
@@ -33,9 +33,9 @@
                             <label >Nights:</label>
                             <select  asp-for="Nights">
 
-                                @for(int i =1; i <=15; i++)
+                                @for(var i =1; i <=15; i++)
                                 {
-                                    <option value="">@i</option>
+                                    <option value="@i">@i</option>
 
                                 }
                                 

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "avAy9qQ5uaqqnckRlta/suGgTFjabmmkoC6Nc0gE4sk=",
+  "Hash": "Ut9R1zZOsLfXkxNp7ix8T4dR4/ZJiQmSkqmijGdqUBI=",
   "Source": "Booking_System",
   "BasePath": "_content/Booking_System",
   "Mode": "Default",
@@ -1649,6 +1649,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Room\\6d09d226-b2d0-40ea-979d-555b87add7c8.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\Room\\e796b5c4-7940-4ad5-b1bb-5da87faa6f8a.jpg",
+      "SourceId": "Booking_System",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\",
+      "BasePath": "_content/Booking_System",
+      "RelativePath": "images/Room/e796b5c4-7940-4ad5-b1bb-5da87faa6f8a.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Room\\e796b5c4-7940-4ad5-b1bb-5da87faa6f8a.jpg"
     },
     {
       "Identity": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\js\\bootstrap.min.js",

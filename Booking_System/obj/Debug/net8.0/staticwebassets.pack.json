@@ -133,6 +133,10 @@
       "PackagePath": "staticwebassets\\images\\Room\\6d09d226-b2d0-40ea-979d-555b87add7c8.jpg"
     },
     {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\Room\\e796b5c4-7940-4ad5-b1bb-5da87faa6f8a.jpg",
+      "PackagePath": "staticwebassets\\images\\Room\\e796b5c4-7940-4ad5-b1bb-5da87faa6f8a.jpg"
+    },
+    {
       "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\denied.png",
       "PackagePath": "staticwebassets\\images\\denied.png"
     },
