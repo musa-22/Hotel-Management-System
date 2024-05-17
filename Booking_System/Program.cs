@@ -29,6 +29,8 @@ namespace Booking_System
             builder.Services.AddScoped<IRoomTypesRepositories, RoomTypesRepositories>();
             builder.Services.AddScoped<IRoomNumberpesRepositories, RoomNumberypesRepositories>();
 
+            builder.Services.AddScoped<IUserAdministrationRepository, UserAdministrationRepository>();
+
             // modify passwords
             builder.Services.Configure<IdentityOptions>(option =>
             {

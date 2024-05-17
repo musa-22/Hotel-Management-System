@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Booking_System.Model.Domain
@@ -46,5 +47,10 @@ namespace Booking_System.Model.Domain
         public DateOnly CheckOutDate { get; set; }
 
         public int Room_NumberfromBookingModel { get; set; }
+
+
+        [ValidateNever]
+        public IEnumerable<Booking> BookingList { get; set; }
+
     }
 }
