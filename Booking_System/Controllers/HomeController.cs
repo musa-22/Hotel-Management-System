@@ -63,6 +63,7 @@ namespace Booking_System.Controllers
                 CheckInDate = checkInDate,
                 RoomList = roomList,
                 Nights = nights,
+                
             };
 
 

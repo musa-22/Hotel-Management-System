@@ -6,7 +6,8 @@ namespace Booking_System.Model.Domain
 {
     public class Booking
     {
-       
+        [Key]       
+        
         public int Id { get; set; }
 
 

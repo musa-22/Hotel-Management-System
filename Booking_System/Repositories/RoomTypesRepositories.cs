@@ -70,9 +70,10 @@ namespace Booking_System.Repositories
             if(createRoomType is not  null) 
             {
             
+
                 
 
-                await _db.AddAsync(roomTypes);
+             
             
                 await _db.SaveChangesAsync();   
             }
@@ -147,7 +148,17 @@ namespace Booking_System.Repositories
             return deleteRoomType;
         }
 
+
+        public void DetachEntity(RoomTypes entity)
+        {
+            var entry = _db.Entry(entity);
+            if (entry != null)
+            {
+                entry.State = EntityState.Detached;
+            }
+        }
     }
+    
 }
 
 

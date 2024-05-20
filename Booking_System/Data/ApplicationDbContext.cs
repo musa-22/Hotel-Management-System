@@ -16,7 +16,11 @@ namespace Booking_System.Data
 
         public DbSet<RoomNumber> RoomNumbersDb { get; set; }
 
+        public DbSet<Booking> bookingsDb { get; set; }
+
         public DbSet<UserAdministration> UserAdministrationsDb { get; set; }
+
+
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

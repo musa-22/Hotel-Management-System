@@ -15,5 +15,8 @@ namespace Booking_System.Model.ViewModels
 
         public int Nights { get; set; }
 
+
+     //  public Booking Booking { get; set; }
+
     }
 }

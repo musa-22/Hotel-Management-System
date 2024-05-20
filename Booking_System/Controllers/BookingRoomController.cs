@@ -1,5 +1,6 @@
 ﻿using Booking_System.Model.Domain;
 using Booking_System.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Globalization;
 using System.Security.Claims;
@@ -14,29 +15,43 @@ namespace Booking_System.Controllers
         private readonly IRoomTypesRepositories _db;
         private readonly IUserAdministrationRepository _userAdministrationRepository;
 
-        public BookingRoomController(IRoomTypesRepositories db, IUserAdministrationRepository userAdministrationRepository)
+        private readonly IBookingRepository _bookingRepository;
+        public BookingRoomController(IRoomTypesRepositories db, 
+        IUserAdministrationRepository userAdministrationRepository,
+        IBookingRepository bookingRepository)
         {
-            this._db = db;
-            _userAdministrationRepository = userAdministrationRepository;
+          this._db = db;
+          this._userAdministrationRepository = userAdministrationRepository;
+          this._bookingRepository = bookingRepository;
 
         }
 
-        public async Task<IActionResult> FinalizeReservation(int roomId , string checkInDate , int nights)
+
+
+        [Authorize]
+        public IActionResult Index()
         {
-         
-            var claimIdentity =  (ClaimsIdentity)User.Identity;
-            var userId = claimIdentity.FindFirst(ClaimTypes.NameIdentifier);
+
+            return View();
+        }
 
 
-            // minor bug need to be fixed later
-            if (userId == null || string.IsNullOrEmpty(userId.Value))
+     
+        [Authorize]
+       
+        public async Task<IActionResult> FinalizeReservation(int roomId , string checkInDate , int nights )
+        {
+
+            if (ModelState.IsValid)
             {
-                return RedirectToAction("Login", "Account");
-            }
 
+
+                var claimIdentity =  (ClaimsIdentity)User.Identity;
+            var userId = claimIdentity.FindFirst(ClaimTypes.NameIdentifier);
             UserAdministration user = await _userAdministrationRepository.GetAsync(userId.Value);
 
-            DateOnly checkInDateOnly = DateOnly.ParseExact(checkInDate, "dd/MM/yyyy", CultureInfo.InvariantCulture);
+
+             DateOnly checkInDateOnly = DateOnly.ParseExact(checkInDate, "dd/MM/yyyy", CultureInfo.InvariantCulture);
 
 
             var roomType = await _db.GetAsync(roomId);
@@ -44,28 +59,58 @@ namespace Booking_System.Controllers
 
             Booking booking = new()
             {
+                
                 RoomId = roomId,
                 RoomType = await _db.GetAsync(roomId),
-                CheckInDate = checkInDateOnly,
+            CheckInDate = checkInDateOnly,
                 Nights = nights,
                 CheckOutDate = checkInDateOnly.AddDays(nights),
-                TotalCost = totalPrice,
+              TotalCost = totalPrice,
                 UserId = userId.Value,
                 phoneNumber= user.PhoneNumber,
                 Email=user.Email,
                 Name = user.Name,
+                
         };
+         
 
-                            
             return View(booking);
+            }
+            return View();
         }
 
 
-        public double getFullPrice(double total , int night)
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> FinalizeReservationCheck(Booking booking)
         {
-           
+
+
+            booking.Status = SD.SD.StatusApproved;
+
+            booking.BookingDate = DateTime.Now;
+
+
+            await _bookingRepository.Create(booking);
+
+
+
+            return RedirectToAction(nameof(BookingConfirmation), new { bookingId = booking.Id });
+        }
+
+        [Authorize]
+        public IActionResult BookingConfirmation(int bookingId)
+        {
+            return View(bookingId);
+        }
+
+
+        public double getFullPrice(double total, int night)
+        {
+
             return total * night;
         }
+
 
 
     }

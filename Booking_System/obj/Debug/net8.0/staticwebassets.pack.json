@@ -117,6 +117,14 @@
       "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
     },
     {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\Reservation.png",
+      "PackagePath": "staticwebassets\\images\\Reservation.png"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\Room\\1c076aad-aaf7-49be-81dd-7018b0e747cc.jpg",
+      "PackagePath": "staticwebassets\\images\\Room\\1c076aad-aaf7-49be-81dd-7018b0e747cc.jpg"
+    },
+    {
       "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\Room\\2946ed4a-9c89-434b-8b3f-9ae966f832cb.jpg",
       "PackagePath": "staticwebassets\\images\\Room\\2946ed4a-9c89-434b-8b3f-9ae966f832cb.jpg"
     },
@@ -129,12 +137,28 @@
       "PackagePath": "staticwebassets\\images\\Room\\5ce0eecf-b860-4465-b06e-7354781a0eb8.jpg"
     },
     {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\Room\\5d6c26bf-2d7f-44c7-b636-194278698145.jpg",
+      "PackagePath": "staticwebassets\\images\\Room\\5d6c26bf-2d7f-44c7-b636-194278698145.jpg"
+    },
+    {
       "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\Room\\6d09d226-b2d0-40ea-979d-555b87add7c8.jpg",
       "PackagePath": "staticwebassets\\images\\Room\\6d09d226-b2d0-40ea-979d-555b87add7c8.jpg"
     },
     {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\Room\\aaa6e59f-3dec-4462-a9b4-d01dc5299deb.jpg",
+      "PackagePath": "staticwebassets\\images\\Room\\aaa6e59f-3dec-4462-a9b4-d01dc5299deb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\Room\\c27bb3fe-1e1d-456d-af7d-d49b435b5c6a.jpg",
+      "PackagePath": "staticwebassets\\images\\Room\\c27bb3fe-1e1d-456d-af7d-d49b435b5c6a.jpg"
+    },
+    {
       "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\Room\\e796b5c4-7940-4ad5-b1bb-5da87faa6f8a.jpg",
       "PackagePath": "staticwebassets\\images\\Room\\e796b5c4-7940-4ad5-b1bb-5da87faa6f8a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\Room\\f19fae74-4a4f-4dda-9754-da22f4baac34.jpg",
+      "PackagePath": "staticwebassets\\images\\Room\\f19fae74-4a4f-4dda-9754-da22f4baac34.jpg"
     },
     {
       "Id": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\wwwroot\\images\\denied.png",

@@ -30,6 +30,7 @@ namespace Booking_System
             builder.Services.AddScoped<IRoomNumberpesRepositories, RoomNumberypesRepositories>();
 
             builder.Services.AddScoped<IUserAdministrationRepository, UserAdministrationRepository>();
+            builder.Services.AddScoped<IBookingRepository, BookingRepository>();
 
             // modify passwords
             builder.Services.Configure<IdentityOptions>(option =>

@@ -20,6 +20,6 @@ namespace Booking_System.Repositories
 
 
        Task<RoomTypes> DeleteAsync(RoomTypes roomTypes);
-
+        void DetachEntity(RoomTypes roomType);
     }
 }

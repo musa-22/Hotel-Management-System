@@ -9,7 +9,9 @@ namespace Booking_System.Model.Domain
    
         public string Name { get; set; }
 
-       
+        public string Email {  get; set; }  
+
+        
         public DateTime CreatedDateAt { get; set; }
 
     }

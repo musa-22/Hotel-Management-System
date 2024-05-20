@@ -22,6 +22,67 @@ namespace Booking_System.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Booking_System.Model.Domain.Booking", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("BookingDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("BookingId")
+                        .HasColumnType("int");
+
+                    b.Property<DateOnly>("CheckInDate")
+                        .HasColumnType("date");
+
+                    b.Property<DateOnly>("CheckOutDate")
+                        .HasColumnType("date");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Nights")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RoomId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Room_NumberfromBookingModel")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Status")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("TotalCost")
+                        .HasColumnType("float");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("phoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BookingId");
+
+                    b.HasIndex("RoomId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("bookingsDb");
+                });
+
             modelBuilder.Entity("Booking_System.Model.Domain.RoomNumber", b =>
                 {
                     b.Property<int>("Room_Number")
@@ -116,7 +177,7 @@ namespace Booking_System.Migrations
                         new
                         {
                             Id = 1,
-                            Created_Date = new DateTime(2024, 5, 12, 21, 9, 5, 610, DateTimeKind.Local).AddTicks(3222),
+                            Created_Date = new DateTime(2024, 5, 18, 13, 43, 58, 533, DateTimeKind.Local).AddTicks(8057),
                             Description = "One of the most common types of room at any hotel is the single. Typically, this means that the room has one bed meant for one person or a couple, but it doesn't necessarily mean that the room is small. In fact, some hotels may offer larger rooms than others, depending on the size of the hotel itself. Guests traveling alone or for business commonly occupy single rooms if they need short-term accommodations and not a lot of extra space. They're usually alone in the room and are using the space primarily for the purposes of sleeping and getting ready to go out.",
                             Guests = 1,
                             ImageUrl = "https://placehold.co/600x401",
@@ -126,7 +187,7 @@ namespace Booking_System.Migrations
                         new
                         {
                             Id = 2,
-                            Created_Date = new DateTime(2024, 5, 12, 21, 9, 5, 610, DateTimeKind.Local).AddTicks(3272),
+                            Created_Date = new DateTime(2024, 5, 18, 13, 43, 58, 533, DateTimeKind.Local).AddTicks(8109),
                             Description = ". A twin room contains two single-size beds, so it's meant for a maximum of two guests. A double room, though, can sleep up to four people because it contains two double-size beds. Both contain all the basic accommodations you would expect to find in a hotel room. ",
                             Guests = 1,
                             ImageUrl = "https://placehold.co/600x401",
@@ -136,7 +197,7 @@ namespace Booking_System.Migrations
                         new
                         {
                             Id = 3,
-                            Created_Date = new DateTime(2024, 5, 12, 21, 9, 5, 610, DateTimeKind.Local).AddTicks(3275),
+                            Created_Date = new DateTime(2024, 5, 18, 13, 43, 58, 533, DateTimeKind.Local).AddTicks(8111),
                             Description = "room. By placing the bed in the center of the wall, the room allows for standard amenities such as a nightstand, a desk or work area, a television, and a closet. Depending on the hotel, this room type may also include a couch or sitting area",
                             Guests = 1,
                             ImageUrl = "https://placehold.co/600x401",
@@ -146,7 +207,7 @@ namespace Booking_System.Migrations
                         new
                         {
                             Id = 4,
-                            Created_Date = new DateTime(2024, 5, 12, 21, 9, 5, 610, DateTimeKind.Local).AddTicks(3277),
+                            Created_Date = new DateTime(2024, 5, 18, 13, 43, 58, 533, DateTimeKind.Local).AddTicks(8114),
                             Description = "Typically, this means that the room has one bed meant for one person or a couple, but it doesn't necessarily mean that the room is small. In fact, some hotels may offer larger rooms than others, depending on the size of the hotel itself. Guests traveling alone or for business commonly occupy single rooms if they need short-term accommodations and not a lot of extra space. They're usually alone in the room and are using the space primarily for the purposes of sleeping and getting ready to go out.",
                             Guests = 1,
                             ImageUrl = "https://placehold.co/600x401",
@@ -171,6 +232,7 @@ namespace Booking_System.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
@@ -360,6 +422,29 @@ namespace Booking_System.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("Booking_System.Model.Domain.Booking", b =>
+                {
+                    b.HasOne("Booking_System.Model.Domain.Booking", null)
+                        .WithMany("BookingList")
+                        .HasForeignKey("BookingId");
+
+                    b.HasOne("Booking_System.Model.Domain.RoomTypes", "RoomType")
+                        .WithMany()
+                        .HasForeignKey("RoomId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Booking_System.Model.Domain.UserAdministration", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("RoomType");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Booking_System.Model.Domain.RoomNumber", b =>
                 {
                     b.HasOne("Booking_System.Model.Domain.RoomTypes", "RoomType")
@@ -420,6 +505,11 @@ namespace Booking_System.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Booking_System.Model.Domain.Booking", b =>
+                {
+                    b.Navigation("BookingList");
                 });
 #pragma warning restore 612, 618
         }

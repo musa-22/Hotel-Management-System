@@ -1,54 +1,19 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|c:\\users\\musas\\onedrive\\desktop\\hotel system\\hotel_system\\booking_system\\controllers\\bookingroomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|solutionrelative:booking_system\\controllers\\bookingroomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|c:\\users\\musas\\onedrive\\desktop\\hotel system\\hotel_system\\booking_system\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA09170A-A913-4963-B3C5-24BA4FA848CB}|Booking_System\\Booking_System.csproj|solutionrelative:booking_system\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 171,
+      "VerticalTabListWidth": 246,
       "DocumentGroups": [
         {
           "DockedWidth": 281,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Booking_System\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Booking_System\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAQwCoAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T14:23:43.694Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BookingRoomController.cs",
-              "DocumentMoniker": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Controllers\\BookingRoomController.cs",
-              "RelativeDocumentMoniker": "Booking_System\\Controllers\\BookingRoomController.cs",
-              "ToolTip": "C:\\Users\\musas\\OneDrive\\Desktop\\Hotel System\\Hotel_System\\Booking_System\\Controllers\\BookingRoomController.cs",
-              "RelativeToolTip": "Booking_System\\Controllers\\BookingRoomController.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAmwCUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T10:45:09.258Z",
-              "EditorCaption": ""
             }
           ]
         }

@@ -27,6 +27,7 @@ namespace Booking_System.Model.Domain
         public string? ImageUrl { get; set; }
 
 
+
         public DateTime? Created_Date { get; set; }
         public DateTime? Updated_Date { get; set; }
 
